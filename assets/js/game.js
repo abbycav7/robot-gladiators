@@ -70,9 +70,12 @@ var fight = function(enemyName) {
 };
 
 //function to start a new game
-var startGame = function() 
+var startGame = function() {
 // fight each enemy-robot by looping over them and fighting them one at a time
-  for (var i=0; i < enemyNames.length; i++) {
+  for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
+  } for (var i=0; i < enemyNames.length; i++); {
   // reset player stats
   playerHealth = 100;
   playerAttack = 10;
@@ -105,7 +108,7 @@ var startGame = function()
   }
   // start the game when the page loads
 startGame();
-}
+
 //play again
 startGame();
 
@@ -129,4 +132,5 @@ if (playAgainConfirm) {
 } 
 else {
   window.alert("Thank you for playing Robot Gladiators! Come back soon!");
+}
 }
